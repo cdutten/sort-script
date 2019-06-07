@@ -1,4 +1,4 @@
- Sort  script
+# Sort  script
 Sorts a list of numbers with insertion sort algorithm
 
 ### Usage
@@ -16,7 +16,7 @@ $ python InsertionSort.py 10 9 8 7 6 5 4 3 2 1 0 33
 Create the docker
 ```
 $ docker build -t sorting-script .
-$ docker run -v /path/to/folder/of/the/project:/usr/src/app --name sort-scr sorting-script
+$ docker run -dit -v /path/to/folder/src/of/the/project:/usr/src/app --name sort-scr sorting-script
 ```
 
 Get inside the container with

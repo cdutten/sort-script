@@ -12,7 +12,7 @@ class InsertionSort:
         parser = argparse.ArgumentParser(description='Sort with Insertion sort algorithm')
         parser.add_argument('integers', metavar='integers', nargs='+', type=int,
                             help='Integers to sort')
-        parser.add_argument('-v','--verbose',
+        parser.add_argument('-v','--verbose', action='store_true',
                            help='Whether or not print all comparison\'s')
         args = parser.parse_args()
         self.li = args.integers
